@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación de Valores con Operadores Lógicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Comparación de Valores con Operadores Lógicos</h1>
+    
+    <h2>Operador AND (&&)</h2>
+    <p>Ingrese dos valores (verdadero o falso):</p>
+    <input type="text" id="valor1-and" placeholder="Valor 1 (true/false)">
+    <input type="text" id="valor2-and" placeholder="Valor 2 (true/false)">
+    <button onclick="compararAND()">Comparar AND</button>
+    <p id="resultado-and"></p>
+    
+    <h2>Operador OR (||)</h2>
+    <p>Ingrese dos valores (verdadero o falso):</p>
+    <input type="text" id="valor1-or" placeholder="Valor 1 (true/false)">
+    <input type="text" id="valor2-or" placeholder="Valor 2 (true/false)">
+    <button onclick="compararOR()">Comparar OR</button>
+    <p id="resultado-or"></p>
+    
+    <h2>Operador NOT (!)</h2>
+    <p>Ingrese un valor (verdadero o falso):</p>
+    <input type="text" id="valor-not" placeholder="Valor (true/false)">
+    <button onclick="compararNOT()">Comparar NOT</button>
+    <p id="resultado-not"></p>
+    
+    <h2>Operador Nullish Coalescing (??)</h2>
+    <p>Ingrese un valor o deje en blanco (null o undefined):</p>
+    <input type="text" id="valor-nullish" placeholder="Valor (o deja en blanco)">
+    <button onclick="compararNullish()">Comparar Nullish</button>
+    <p id="resultado-nullish"></p>
+
+    <script src="FUNCION.js"></script>
+</body>
+</html>
