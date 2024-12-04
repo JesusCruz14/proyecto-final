@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayle.css">
+    <title>Aplicación Multisección</title>
+</head>
+<body>
+    <header>
+        <h1>Aplicación Multisección</h1>
+    </header>
+    <main>
+        <div id="tipo-seccion">
+            <button onclick="mostrarSeccion('verduleria')">Verdulería</button>
+            <button onclick="mostrarSeccion('ferreteria')">Ferretería</button>
+            <button onclick="mostrarSeccion('cafe')">Café Internet</button>
+        </div>
+        
+        <div id="secciones">
+            <div id="verduleria" class="seccion" style="display: none;">
+                <h2>Frutas y Verduras</h2>
+                <div id="tipo-productos">
+                    <button onclick="cargarProductos('frutas')">Frutas</button>
+                    <button onclick="cargarProductos('verduras')">Verduras</button>
+                </div>
+                <div id="productos-grid"></div>
+                <div id="ticket-container">
+                    <h2>Tu Ticket</h2>
+                    <div id="ticket"></div>
+                    <button onclick="borrar()">Borrar Todo</button>
+                    <button onclick="comprar()">Comprar</button>
+                    <button onclick="modificarTicket()">Modificar Ticket</button>
+                </div>
+            </div>
+
+            <div id="ferreteria" class="seccion" style="display: none;">
+                <h2>Tienda de Herramientas y Materiales</h2>
+                <div id="tipo-productos">
+                    <button onclick="cargar_productos('herramientas')">Herramientas</button>
+                    <button onclick="cargar_productos('materiales')">Materiales</button>
+                </div>
+                <div id="productos-grid"></div>
+                <div id="detalle-producto"></div>
+                <div id="ticket-container">
+                    <h2>Tu Ticket</h2>
+                    <div id="ticket"></div>
+                    <input type="number" id="producto-cantidad" placeholder="Cantidad" min="1" value="1">
+                    <select id="producto-tamano">
+                        <option value="mediano">Mediano</option>
+                        <option value="chico">Chico</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                    <button onclick="agregar_Ticket()">Agregar al Ticket</button>
+                    <button onclick="comprar()">Comprar</button>
+                    <button onclick="limpiar_ticket()">Limpiar Ticket</button>
+                </div>
+            </div>
+
+            <div id="cafe" class="seccion" style="display: none;">
+                <h2>Sistema de Sesiones de Computadoras</h2>
+                <div id="formulario-sesion">
+                    <label for="nombre-usuario">Nombre de Usuario:</label>
+                    <input type="text" id="nombre-usuario" required>
+                    <button onclick="Sesion()">Iniciar Sesión</button>
+                </div>
+                <div id="ticket-container">
+                    <h2>Ticket Generado</h2>
+                    <div id="ticket"></div>
+                    <p>Tiempo de Uso: <span id="tiempo-uso">0:00:00</span></p>
+                    <p>Costo Total: $<span id="costo-actual">0.00</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="verdureria.js"></script>
+    <script src="ferreteria.js"></script>
+    <script src="cafe_internet.js"></script>
+    <script>
+        function mostrarSeccion(seccion) {
+            const secciones = document.querySelectorAll('.seccion');
+            secciones.forEach(s => s.style.display = 'none');
+            document.getElementById(seccion).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

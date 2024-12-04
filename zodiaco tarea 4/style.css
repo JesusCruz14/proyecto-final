@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8ff; 
+}
+
+h1 {
+    color: #070707; 
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #242222;
+    cursor: pointer;
+}
+
+button#option1 {
+    background-color: #f5f112; 
+}
+
+button#option2 {
+    background-color: #32bcdf; 
+}
+
+button#option3 {
+    background-color: #f31a0a; 
+}
+
+button:hover {
+    opacity: 0.8; 
+}
+
+#content {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #c5c3c3;
+    border-radius: 5px;
+    background-color: #fff; 
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #b9b9b9;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: calc(30% - 20px); 
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4CAF50; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #e5e6e7; 
+    border-radius: 5px;
+}
+
+li button {
+    background-color: #007BFF; 
+}
+
+li button:hover {
+    background-color: #0056b3; 
+}
