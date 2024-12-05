@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Internet</title>
+    <link rel="stylesheet" href="stylesc.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Café Internet</h1>
+        <nav><a href="index.html">Volver al Menú Principal</a></nav>
+    </header>
+    <main>
+        <section id="cafeInternetSection">
+            <h2>Gestión de Computadoras</h2>
+            <form id="cafeForm">
+                <input type="text" id="nombreComputadora" placeholder="Nombre de la Computadora" required>
+                <input type="number" id="precioMinuto" placeholder="Precio por Minuto" required min="0">
+                <button type="submit">Agregar Computadora</button>
+            </form>
+            <h3>Lista de Computadoras</h3>
+            <ul id="listaCafeInternet"></ul>
+        </section>
+        <section>
+            <h2>Gestión de Rentas</h2>
+            <form id="rentaForm">
+                <input type="text" id="nombreUsuarioRenta" placeholder="Nombre del Usuario" required>
+                <select id="numeroComputadoraRenta" required>
+                    <option value="">Selecciona una Computadora</option>
+                </select>
+                <input type="number" id="tiempoUsoRenta" placeholder="Tiempo de Uso (minutos)" required min="1">
+                <button type="submit">Iniciar Renta</button>
+            </form>
+            <div id="tiempoRestante"></div>
+        </section>
+        <section>
+            <h2>Agregar Tiempo</h2>
+            <form id="agregarTiempoForm">
+                <select id="numeroComputadoraAgregar" required>
+                    <option value="">Selecciona una Computadora</option>
+                </select>
+                <input type="number" id="minutosAgregar" placeholder="Minutos a Agregar" required min="1">
+                <button type="submit">Agregar Tiempo</button>
+            </form>
+        </section>
+    </main>
+    <script src="cafeInternet.js"></script>
+</body>
+</html>
+
