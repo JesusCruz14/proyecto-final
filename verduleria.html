@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdulería</title>
+    <link rel="stylesheet" href="stylesv.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Verdulería</h1>
+        <nav><a href="index.html">Volver al Menú Principal</a></nav>
+    </header>
+    <main>
+        <!-- Sección de Verdulería -->
+        <section id="verduleriaSection">
+            <h2>Gestión de Productos</h2>
+            <form id="verduleriaForm">
+                <input type="text" id="nombreProducto" placeholder="Nombre del Producto" required>
+                <select id="familiaProducto" required>
+                    <option value="">Selecciona una Familia</option>
+                    <option value="Legumbre">Legumbre</option>
+                    <option value="Grano">Grano</option>
+                    <option value="Fruta">Fruta</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <select id="tipoProducto" required>
+                    <option value="">Selecciona un Tipo</option>
+                    <option value="Fruta">Fruta</option>
+                    <option value="Verdura">Verdura</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <select id="origenProducto" required>
+                    <option value="">Selecciona un Origen</option>
+                    <option value="Árbol">Árbol</option>
+                    <option value="Tierra">Tierra</option>
+                </select>
+                <input type="number" id="precioUnitario" placeholder="Precio Unitario" required min="0">
+                <input type="number" id="precioKilo" placeholder="Precio por Kilo" required min="0">
+                <input type="number" id="cantidadProducto" placeholder="Cantidad Inicial" required min="0">
+                <button type="submit">Agregar Producto</button>
+            </form>
+            <h3>Lista de Productos</h3>
+            <ul id="listaVerduleria"></ul>
+        </section>
+        <section>
+            <h2>Realizar Compra</h2>
+            <form id="compraForm">
+                <select id="nombreProductoCompra" required>
+                    <option value="">Selecciona un Producto</option>
+                </select>
+                <input type="number" id="cantidadCompra" placeholder="Cantidad" required min="1">
+                <select id="tipoCompra" required>
+                    <option value="unidad">Unidad</option>
+                    <option value="kilo">Kilo</option>
+                </select>
+                <button type="submit">Realizar Compra</button>
+            </form>
+            <ul id="listaCompras"></ul>
+            <div id="totalCompra">Total de la compra: $0.00</div>
+        </section>
+    </main>
+    <script src="verduleria.js"></script>
+</body>
+</html>
