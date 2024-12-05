@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería</title>
+    <link rel="stylesheet" href="stylesf.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Ferretería</h1>
+        <nav><a href="index.html">Volver al Menú Principal</a></nav>
+    </header>
+    <main>
+        <section id="ferreteriaSection">
+            <h2>Gestión de Productos</h2>
+            <form id="ferreteriaForm">
+                <input type="text" id="nombreFerreteria" placeholder="Nombre del Producto" required>
+                <select id="familiaFerreteria" required>
+                    <option value="">Selecciona una Familia</option>
+                    <option value="Herramienta">Herramienta</option>
+                    <option value="Material">Material</option>
+                </select>
+                <select id="departamentoFerreteria" required>
+                    <option value="">Selecciona un Departamento</option>
+                    <option value="Electrónica">Electrónica</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Industrial">Industrial</option>
+                    <option value="Jardinería">Jardinería</option>
+                </select>
+                <select id="tamañoFerreteria" required>
+                    <option value="">Selecciona un Tamaño</option>
+                    <option value="Chico">Chico</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Grande">Grande</option>
+                </select>
+                <input type="number" id="precioFerreteria" placeholder="Precio" required min="0">
+                <input type="number" id="cantidadFerreteria" placeholder="Cantidad Inicial" required min="0">
+                <button type="submit">Agregar Producto</button>
+            </form>
+            <h3>Lista de Productos</h3>
+            <ul id="listaFerreteria"></ul>
+        </section>
+        <section>
+            <h2>Realizar Compra</h2>
+            <form id="compraFerreteriaForm">
+                <select id="nombreProductoCompraFerreteria" required>
+                    <option value="">Selecciona un Producto</option>
+                </select>
+                <input type="number" id="cantidadCompraFerreteria" placeholder="Cantidad" required min="1">
+                <button type="submit">Realizar Compra</button>
+            </form>
+            <ul id="listaComprasFerreteria"></ul>
+            <div id="totalCompraFerreteria">Total de la compra: $0.00</div>
+        </section>
+    </main>
+    <script src="ferreteria.js"></script>
+</body>
+</html>

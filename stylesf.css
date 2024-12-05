@@ -1,0 +1,99 @@
+/* styles-ferreteria.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf5e6;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #b22222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #b22222;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #8b1c1c;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #f5f5dc;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    width: auto;
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+h2, h3 {
+    color: #b22222;
+    margin-bottom: 15px;
+}
+
+#totalCompraFerreteria {
+    font-weight: bold;
+    background-color: #fce4e4;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
